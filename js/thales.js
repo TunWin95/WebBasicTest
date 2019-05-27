@@ -11,20 +11,20 @@ $(document).ready(function() {
 
     if (!firstname.match(name_regex) || firstname.length == 0) {
     
-    $('#p1').text("First name can't be blank and must be words").css("color","red"); 
+    $('#p1').text("First name can't be blank and must be words").css({"color":"red","display":"block"}); 
     $("#firstname").focus();
     return false;
     }
 
     else if (!lastname.match(name_regex) || lastname.length == 0) {
-    $('#p2').text("Last name can't be blank and must be words").css("color","red"); 
+    $('#p2').text("Last name can't be blank and must be words").css({"color":"red","display":"block"}); 
     $("#firstname").focus();
     return false;
     }
 
     // Validating Email Field.
     else if (!email.match(email_regex) || email.length == 0) {
-    $('#p3').text("Email can't be blank and must include xx@xxx.xx sign").css("color","red");
+    $('#p3').text("Email can't be blank and must include xx@xxx.xx sign").css({"color":"red","display":"block"});
     $("#email").focus();
     return false;
     }
