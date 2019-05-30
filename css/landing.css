@@ -24,7 +24,7 @@ body {
 }
 
 .bar-col img {
-    height: 5144px;
+    height: 5366px;
     width: 100%;
 }
 
@@ -298,15 +298,32 @@ body {
     height: 380px;
 }
 
+.blog-part1-container, .blog-part2-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.blog-part3-container, .blog-part4-container {
+    width: 100%;
+    height: 570px;
+    position: relative;
+}
+
 .blog-bg1 {
-    width: 732px;
-    height: 380px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
+.social {
+    position: absolute;
+    bottom: 0px;
+}
+
 .blog-bg4 {
-    width: 841px;
-    height: 380px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -364,10 +381,18 @@ body {
 .blogger {
     margin: 5px;
     float: right;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
 }
 
 .blog-obj1 {
     margin-bottom: 23px;
+    height: 585px;
+}
+
+.blog-line {
+    filter: brightness(0) invert(1);
 }
 
 /*Thales Headquarters*/
@@ -378,7 +403,7 @@ body {
     padding-top: 80px;
     padding-bottom: 5px;
     margin-bottom: 10px;
-    height: 550px;
+    height: 700px;
 }
 
 .headqua-title {
@@ -396,25 +421,30 @@ body {
     font-family: Ubuntu-R;
 }
 
-.motivo-map img {
+#motivo-map {
     max-width: 100%;
-    max-height: 100%;
+    height: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 .headqua-form {
     font-family: Ubuntu-R;
-    height: 400px;
+    height: 100%;
+}
+
+.contact-info {
+    height: 100%;
 }
 
 .form-group input[type="text"], input[type="email"], textarea {
     border-radius: 0 !important;
     font-size: 12px !important;
-    padding: 5px !important;
+    padding: 20px !important;
     margin-top: 8px;
-    margin-bottom: 8px;
 }
+
+
 
 .headqua-form button {
     width: 100% !important;
@@ -425,6 +455,7 @@ body {
 
 .map-container {
     padding-right: 0 !important;
+    height: 600px;
 }
 
 /*Thales sitemap*/
@@ -475,7 +506,7 @@ body {
 }
 
 .headqua-row {
-    height: 490px;
+    height: 600px;
 }
 
 
@@ -568,6 +599,34 @@ body {
     margin-bottom: 15px;
 }
 
+.job-indicator-w {
+    margin-left: 45%;
+    margin-top: 20px;
+}
+
+#job-indicator-w2, #job-indicator-w3, #job-indicator-w4
+, #job-indicator-w5 {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    background-color: darkgray;
+    float: left;
+    cursor: pointer;
+}
+
+#job-indicator-w1 {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    background-color: black;
+    float: left;
+    cursor: pointer;
+}
+
 .caret-right img {
     width: 20px;
     height: 20px;
@@ -576,12 +635,12 @@ body {
 }
 
 .job-post-m, .about-thales-m, .about-divider-m, .why-header-m,
-.why-thales-sub, .why-capt-m, .blog-header-m, .blog-sub,
+.why-thales-sub, .why-capt-m, .blog-header-m,
 .blog-header button, .blog-title-m, .footer-row-m,
-.headqua-header-m, #p1, #p2, #p3, .thales-subscribe-m,
+.headqua-header-m, .thales-subscribe-m,
 .why-heading-m button, .blog-part-m, .top-m, 
 .motivo-map-m, .motivo-logo, .job-indicator-m, .why-thales-namimg1,
-.why-indicator-m {
+.why-indicator-m, .job-row2, .job-row3, .job-row4, .job-row5 {
     display: none;
 }
 
@@ -592,7 +651,7 @@ body {
     .divider, .why-fcapt, .blog-title, .thales-subscribe,
     .sitemap-copyright, .blog-obj1, .blog-obj2,
     .why-thales button, .job-indicator, .motivo-map, .job-dis-m,
-    .why-dis-m {
+    .why-dis-m, .job-indicator-w {
         display: none;
     }
 
@@ -601,7 +660,8 @@ body {
     .thales-subscribe-m, .why-heading-m button, 
     .blog-part-m, .footer-row-m, .top-m, .motivo-map-m,
     .motivo-logo, .job-indicator-m, .why-thales-namimg1,
-    .why-indicator-m {
+    .why-indicator-m
+     {
         display: block;
     }
 
@@ -855,11 +915,40 @@ body {
         filter: brightness(0) invert(1);
     }
 
-    .why-indicator-m img {
+    .why-indicator-m {
         position: absolute;
         top: 92%;
-        left: 41%;
-        filter: brightness(0) invert(1);
+        left: 5%;
+    }
+
+    #why-indicator1 {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        margin-left: 150px;
+        margin-bottom: 20px;
+        background-color: white;
+        float: left;
+        cursor: pointer;
+    }
+
+    #why-indicator2, #why-indicator3, #why-indicator4
+    {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: darkgray;
+        float: left;
+        cursor: pointer;
+    }
+
+    #why-indicator2 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #why-indicator3 {
+        margin-right: 10px;
     }
 
     /*About Thales*/
@@ -935,6 +1024,7 @@ body {
         font-family: Ubuntu-R;
         font-size: 14px;
         color: gray;
+        margin-bottom: 20px;
     }
 
     .blog-rmore-m {
@@ -998,7 +1088,8 @@ body {
     }
 
     .job-indicator-m {
-        margin-left: 43%;
+        margin-left: 17px;
+        margin-bottom: 20px;
     }
 
     /*Thales Headquarter*/
@@ -1012,8 +1103,33 @@ body {
         height: auto;
     }
 
-    textarea {
-        height: 250px !important;
+    #job-indicator2, #job-indicator3 {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: gray;
+        float: left;
+        cursor: pointer;
+    }
+
+    #job-indicator1 {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        margin-left: 150px;
+        margin-bottom: 20px;
+        background-color:#57B5FC;
+        float: left;
+        cursor: pointer;
+    }
+
+    #job-indicator2 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .contact-info {
+        height: auto;
     }
 
     /*Thales sitemap*/
@@ -1038,6 +1154,10 @@ body {
         width: 200px;
         height: 50px;
         position: absolute;
+    }
+
+    .map-container {
+        height: 250px;
     }
 }
 
