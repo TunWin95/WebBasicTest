@@ -595,7 +595,7 @@ body {
 }
 
 .job-indicator {
-    margin-left: 50%;
+     margin-left: 50%;
     margin-bottom: 15px;
 }
 
@@ -650,8 +650,9 @@ body {
     .bar-col, .thales-ad, .top, .job-info-sub,
     .divider, .why-fcapt, .blog-title, .thales-subscribe,
     .sitemap-copyright, .blog-obj1, .blog-obj2,
-    .why-thales button, .job-indicator, .motivo-map, .job-dis-m,
-    .why-dis-m, .job-indicator-w {
+    .why-thales button, .job-indicator, .motivo-map,
+    .why-dis-m, .job-indicator-w, .job-row2, .job-row3, .job-row4, 
+    .job-row5, .job-dis-m {
         display: none;
     }
 
