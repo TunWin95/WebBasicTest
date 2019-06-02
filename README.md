@@ -13,7 +13,6 @@ Although the current created website is enabled in mobile which it's width is le
 2. About other techniques
 In this test, preprocessors for CSS such as sass, stylus, and less haven't used. Actually, using anyone of these not only can rocket the speed of development, but also create effective code in reducing unnecessaries. It also can help in reducing code volume and enhancing the code consistency. 
 3. About browser compatibility
-Current website is only tested with Mozilla Firefox (version 67) for both web and mobile versions. It's not tested in other browsers which include Safari, Google Chrome and Opera.
-4. About some features
-In 'Finding job' part of the website, I have been used CSS propertie 'display:none' to hide all the job posts expect showing one job post when browsing with mobile. This part should be a slide show for dispalying many jobs in real usage. 
+Current website is only tested with Mozilla Firefox (version 67), Chrome (version 74) for both web and mobile versions. It's not tested in other browsers which include Safari and Opera.
+
 
